@@ -8,7 +8,9 @@
 
 .navbar{
 
-    background: linear-gradient( 90deg , #576238 20%,#576238 54%, #F0EADC 100% );
+    background: linear-gradient( to bottom ,  #ffffff 0%,
+        #f8f8f8 40%,
+        #eaeaea 100% );
     align-items: center;
     justify-content: center;
     height: 80px;
@@ -16,7 +18,11 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+     box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+   
+   
 }
 
 .navbar_container{
@@ -30,6 +36,14 @@
     margin: 0 auto;
     padding: 0 50px
 
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+
+    
 }
 
 #navbar_logo{
@@ -46,6 +60,7 @@
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
+    margin-left: 89;
     
 
 }
@@ -66,6 +81,11 @@
 .navbar_link{
 
     color:  #F0EADC ;
+    background: linear-gradient( to top, #576238 0%, #F0EADC 100% );
+    background-size: 100%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color :transparent;
+    -moz-background-clip: text;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -334,7 +354,7 @@ outline: none;
     width: 80%;
     max-width: 400px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius:50%;
     width: 21rem;
     max-width: 1500px;
 
@@ -355,4 +375,78 @@ outline: none;
 
 .Home_img_container p {
     text-align: center;
+}
+
+.logos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+gap: 5px;
+
+}
+
+
+/*About me Section*/
+
+
+.About_Me{
+
+    background-color: #F0EADC;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+.About_Me_Container{
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90%;
+    background-color: #F0EADC;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+   
+
+
+}
+
+.About_Me_content{
+
+    font-size: 2rem;
+    background-color: #F0EADC;
+    width: 100%;
+    padding: 50px;
+
+}
+
+.About_Me_content h2{
+    font-size: 2rem;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.About_Me_content p {
+
+
+    
+    text-align: justify;
+    font-size:30px;
+    line-height: 1.3;
+}
+
+.main_btn{
+
+    margin: 0 auto ; /* centers the button */
+    display: block;
+    margin-top: 30px;
+
+    
+
+
 }

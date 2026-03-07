@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   
 
 </head>
 
@@ -15,7 +16,19 @@
     <div class= "navbar">
         <div class="navbar_container">
 
-            <a href="/" id="navbar_logo"> SPATAKE</a>
+            
+
+            <div class="Logo">
+                <img src="/images/Logo.png" alt="Logo">
+                <a href="/" id="navbar_logo"> SPATAKE</a>
+                 
+
+            
+            </div>
+            
+           
+
+            
             <div class="navbar_toggle" id="mobile_menu">
 
                 <span class="bar"></span>
@@ -28,11 +41,12 @@
             <ul class="navbar_menu">
                 
                 <li class="navbar_item">
-                    <a href="/" class="navbar_link ">Home</a>
+                    <a href="#home" class="navbar_link ">Home</a>
                 </li>
 
                   <li class="navbar_item">
-                    <a href="/" class="navbar_link ">About</a>
+                    <a href="#about" class="navbar_link ">About Me </a>
+                     
                 </li>
 
                   <li class="navbar_item">
@@ -54,13 +68,15 @@
 
     </div>
 
+
+
     <!--Home section-->
 
-    <div class="Home">
+    <div class="Home" id="home">
 
         <div class="Home_container">
             <div class="Home_content">
-                <h1>HI ITS ME <br> TSHEPO SEPATAKE </h1>
+                <h1 id="hero_title">HI ITS ME <br> TSHEPO SEPATAKE </h1>
                 <p>IM A COMPUTER SCIENCE STUDENT WITH A STRONG INTEREST IN SOFTWARE DEVELOPMENT & I SAY</p>
                 <p>WELCOME TO MY WORLD.</p>
 
@@ -70,8 +86,16 @@
 
                 <div class="Home_img_container">
                     <img src="images/pic1.jpeg" alt="pic" id ="main_img">
-                        <p>Where to find me </p>
+                       
+                    <p>Where to find me </p>
+
+                    <div class="logos">
+                    <img src="images/gitLogo.png" alt="LOGO">
+                    <img src="images/linkLogo.png" alt="LOGO">
+                    <img src="images/TwitterLogo.png" alt="LOGO">
+                    </div>
                 </div>
+
 
                 
             </div>
@@ -83,6 +107,30 @@
         </div>
 
 
+
+
+    </div>
+
+    <!--About Me-->
+
+    <div class="About_Me" id="about">
+        <div class="About_Me_Container">
+            <div class="About_Me_content">
+
+                <h2>About Me</h2>
+                <p>Im a Second year Student at the University of Venda with a Strong interest in Back-end Developement,
+
+                    I enjoy Learning how backend-systems works , writing clean code and building projects that solve real world problems . <br><br>
+                    I am actively growing my skills and looking for opportunities to gain practical experience in java and Spring-boot. <br><br>
+
+                    Currently im learning and solidifying my understanding of the following languages Java , Spring-boot , Thymleaf , HTML/CSS and MySQL database
+                    to build database driven web applications and rest APIs.                
+                
+                </p>
+
+                <button class="main_btn" href="/"> Download CV</button>
+            </div>
+        </div>
 
 
     </div>
