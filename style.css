@@ -394,6 +394,7 @@ gap: 5px;
     background-color: #F0EADC;
     display: flex;
     justify-content: space-between;
+    min-height: 100vh;
    
 
 }
@@ -401,14 +402,13 @@ gap: 5px;
 .About_Me_Container{
 
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-self: center;
-    margin: 0 auto;
+    margin: 0;
     height: 90%;
     background-color: #F0EADC;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
+    padding: 0 ;
+    min-height: 100vh;
    
 
 
@@ -420,6 +420,7 @@ gap: 5px;
     background-color: #F0EADC;
     width: 100%;
     padding: 50px;
+    min-height: 100vh;
 
 }
 
@@ -437,7 +438,7 @@ gap: 5px;
     
     text-align: justify;
     font-size:30px;
-    line-height: 1.3;
+    
 }
 
 .main_btn{
@@ -445,8 +446,71 @@ gap: 5px;
     margin: 0 auto ; /* centers the button */
     display: block;
     margin-top: 30px;
-
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    background-image: linear-gradient(to bottom , #F0EADC 80% , #3d4a1f 20%);
+    padding: 14PX 45PX;
+    outline: none;
     
 
+
+}
+
+.main_btn::after{
+
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+width:0 ;
+height: 100%;
+background:#F0EADC ;
+transition: all 0.35s;
+border-radius: 4px;
+
+}
+
+.main_btn:hover{
+    color: #F0EADC;
+}
+
+.main_btn:hover:after{
+    width: 100%;
+}
+.main_btn a {
+    position: relative;
+    z-index: 2;
+    color: #3d4a1f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*#Home_img{
+
+    height: 100%;
+    width:100%;  
+    max-width: 400px;
+    object-fit: cover;
+    width: 50%;
+    max-width: 1500px;
+}*/
+
+
+#Home_img{
+
+    width: 50%;
+height: 100vh;
+    object-fit: cover;
+    display: block;
+   margin:0;
+   padding:0;
+   object-position: center top;
+   margin: 0;
+   padding:0;
+   position: sticky;
+   top: 0;
 
 }
