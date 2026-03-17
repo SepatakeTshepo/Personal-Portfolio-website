@@ -132,3 +132,49 @@ setTimeout(typeWriter , isDeleting ? 50 : 100);
 }
 
 typeWriter();
+
+/* Skills progress bars fill ups */
+
+
+ function animateBars(){
+
+    setTimeout (() => {
+
+        document.querySelector(".progress_html").style.width ="90%";
+        document.querySelector(".progress_css").style.width = "80%";
+        document.querySelector(".progress_javascript").style.width="70%";
+        document.querySelector(".progress_java").style.width="82%";
+        document.querySelector(".progress_spring-boot").style.width="75%";
+        document.querySelector(".progress_SQL").style.width="80%";
+
+
+    },300);
+
+
+
+}
+
+function resetBars(){
+
+  document.querySelector(".progress_html").style.width ="0";
+        document.querySelector(".progress_css").style.width = "0";
+        document.querySelector(".progress_javascript").style.width="0";
+        document.querySelector(".progress_java").style.width="0";
+        document.querySelector(".progress_spring-boot").style.width="0%";
+        this.document.querySelector(".progress_SQL").style.width="0";
+
+}
+
+const skillsSection = document.querySelector(".Skills");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateBars();   
+    } else {
+      resetBars();     
+    }
+  });
+}, { threshold: 0.05 }); 
+
+observer.observe(skillsSection);

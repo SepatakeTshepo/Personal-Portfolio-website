@@ -426,7 +426,7 @@ gap: 5px;
 }
 
 .About_Me_content h2{
-    font-size: 2rem;
+    font-size: 30px;
     margin-top: 100px;
     text-align: center;
     margin-bottom: 40px;
@@ -516,11 +516,121 @@ height: 100vh;
 
 }
 
+/*Skills Sections*/
 
-/*Autenticator */
+.Skills{
+
+background-color: #F0EADC;
+min-height: 100vh;
+padding: 60px 40px;
+border-top: 3px solid #ccc;
+
+}
+
+#Skills_img{
+
+    object-fit: cover;
+    width: 700px;
+    border-radius: 8px;
+    height: 700px;
+
+}
+
+.Skills_Container{
+ 
+margin-top: 70px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+gap: 100px;
+
+}
+
+.Skills_content{
+
+
+
+display: flex;
+flex-direction: column;
+
+
+}
+.Skills_card{
+    display:flex;
+    flex-direction: column;
+    font: bolder;
+}
+
+.Skills h3{
+
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.progress_track{
+
+    width: 100%;
+    min-width: 700px;
+    background-color: #333;
+    border-radius :25px;
+    height: 25px;
+
+    margin-bottom: 10px;
+}
+
+.Skills_card{
+    width: 300px;
+}
+
+.Skills_card h4{
+    font-size: 20px;
+    
+}
+
+.skill{
+
+    background-color:#d3d3d1;
+    border-radius: 12px;
+    box-shadow:0 2px 10px rgba(0, 0, 0, 0.1);  
+    padding: 10px;
+    transition: transform 0.3s ease;
+    background-color: #e4e1d8;
+    cursor: pointer;
+    width: 700px;
+    font:bolder;
+    
+}
+
+
+
+
+.progress_html, .progress_css, .progress_javascript,
+.progress_java, .progress_spring-boot, .progress_SQL {
+ 
+  height: 25px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 10px;
+  background-color: #ae0c0c;  /* default color */
+  width: 0%;               /* start at 0 */
+  transition: width 1.5s ease-in-out;  /* animate to full width */
+}
+
+.progress_html {  background-color: #4CAF50; }
+.progress_css {  background-color: #2196F3; }
+.progress_javascript {  background-color: #f5a623; }
+.progress_java {  background-color: #f44336; }
+.progress_spring-boot {  background-color: #6db33f; }
+.progress_SQL {  background-color: #9b59b6; }
+
+
+/*Projects_Section */
 
 .Projects{
-    border-top: 2px solid #ccc;
+    border-top: 3px solid #ccc;
     padding: 80px 20px;
     margin-top:  0;
     background-color: #F0EADC;
