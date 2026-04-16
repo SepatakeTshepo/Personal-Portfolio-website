@@ -7,133 +7,46 @@ menu.addEventListener('click' , function(){
 });
 
 
-/*Home section*/
-
-/*const title = document.querySelector('#hero_title');
-const message = ["HI ITS ME", "TSHEPO SEPATAKE"];
-
-let messageIndex= 0;
-let characterIndex = 0;
-let isDeleting = false ;
-
-function typeWriter(){
-
-    const currentMessage = message[messageIndex];
-
-    if (!isDeleting){
-
-        title.innerHTML = currentMessage.substring(0, characterIndex + 1 );
-        characterIndex++;
-
-        if (characterIndex === currentMessage.length){
-
-            isDeleting=true;
-            setTimeout(typeWriter, 1500);
-            return;
-        }
-    }else{
-
-        title.innerHTML = currentMessage.substring (0, characterIndex - 1);
-        characterIndex--;
-
-        if (characterIndex ===0 ){
-
-            isDeleting=false ;
-            messageIndex = (messageIndex + 1 ) % message.length;
-            setTimeout(typeWriter , 500);
-            return ;
 
 
+const text   = "TSHEPO SEPATAKE";
+const target = document.getElementById("Hero_class");
 
-        }
+let index    = 0;
+let deleting = false;
 
+function type() {
+  if (!deleting) {
+  
+    target.textContent = text.slice(0, index + 1);
+    index++;
 
-
-
+    if (index === text.length) {
+  
+      deleting = true;
+      setTimeout(type, 1500);   
+      return;
     }
+    setTimeout(type, 100);  
 
-    setTimeout(typeWriter , isDeleting ?50 : 100);
+  } else {
+  
+    target.textContent = text.slice(0, index - 1);
+    index--;
+
+    if (index === 0) {
+     
+      deleting = false;
+      setTimeout(type, 600);  
+      return;
+    }
+    setTimeout(type, 60);       
+  }
 }
 
-typeWriter();*/
-
-const title = document.querySelector('#hero_title');
-
-const line1 = "HI ITS ME ";
-const line2 = "TSHEPO SEPATAKE";
-
-let charIndex = 0;
-let isDeleting = false ;
-let currentLine = 1;
-
-function typeWriter(){
-
-    if (!isDeleting){
- if (currentLine ===1){
-
-    title.innerHTML = line1.substring (0 , charIndex + 1)+ "<br>" ;
-    charIndex++;
-
-    if (charIndex ===line1.length){
-        currentLine=2;
-        charIndex=0;
-        setTimeout(typeWriter,300);
-        return;
-    }
-
- }else {
-
-    title.innerHTML=line1 + "<br>" + line2.substring(0,charIndex + 1);
-    charIndex++;
-
-    if (charIndex === line2.length){
-
-        isDeleting=true;
-        currentLine=1;
-        charIndex=line1.length;
-        setTimeout(typeWriter , 1500);
-        return;
-    }
- }
-} else {
-
-    if (currentLine===1){
-        title.innerHTML = line1.substring(0, charIndex - 1) + "<br>" + line2 ;
-        charIndex--;
-    
- 
-    if (charIndex===0){
-        currentLine=2;
-        charIndex = line2.length;
-        setTimeout(typeWriter,300);
-        return;
-    }
-
-}else {
-
-    title.innerHTML = line2.substring(0 , charIndex - 1);
-    charIndex--;
-
-    if (charIndex === 0){
-
-        isDeleting=false ;//start everthing deleted again
-        currentLine = 1 ;
-        charIndex = 0 ;
-        setTimeout(typeWriter ,500);
-        return;
-    }
+type(); 
 
 
-}
-
-}
-
-setTimeout(typeWriter , isDeleting ? 50 : 100);
-}
-
-typeWriter();
-
-/* Skills progress bars fill ups */
 
 
  function animateBars(){

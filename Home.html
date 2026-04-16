@@ -60,7 +60,7 @@
                 </li>
 
                   <li class="navbar_item">
-                    <a href="/" class="navbar_link">Contacts</a>
+                    <a href="#Contacts" class="navbar_link">Contacts</a>
                 </li>
                 
             </ul>
@@ -77,12 +77,18 @@
 
 
     <!--Home section-->
+    
 
     <div class="Home" id="home">
-
+ 
         <div class="Home_container">
+           
             <div class="Home_content">
-                <h1 id="hero_title">HI ITS ME <br> TSHEPO SEPATAKE </h1>
+              <div class="container"> 
+                 <h1 id="you">HI ITS ME </h1>
+                <h1 id="Hero_class"> TSHEPO SEPATAKE </h1>
+                
+                </div>
                 <p>IM A COMPUTER SCIENCE STUDENT WITH A STRONG INTEREST IN SOFTWARE DEVELOPMENT & I SAY</p>
                 <p>WELCOME TO MY WORLD.</p>
 
@@ -272,6 +278,49 @@
 
 
     </div>
+<!--  Contancts details-->
+  <div class="form-wrapper" id="Contacts">
+  <div class="form-container">
+ <h3>Get in touch</h3>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" />
+      </div>
+    </div>
+ 
+    <div class="form-group">
+      <label for="whatsapp">WhatsApp Number <span>(optional)</span></label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="+27 81 234 5678" />
+    </div>
+ 
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+    </div>
+ 
+    <button class="btn" type="submit">Send Message</button>
+ 
+  </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="app.js"></script>
 </body>
