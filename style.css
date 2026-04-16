@@ -368,12 +368,12 @@ outline: none;
 }
 
 #main_img{
-    height:100%;
-    width: 80%;
+    height:620px;
+    width: 400px;
     max-width: 400px;
     object-fit: cover;
-    border-radius:50%;
-    width: 21rem;
+    border-radius:20%;
+   
     max-width: 1500px;
 
 }
